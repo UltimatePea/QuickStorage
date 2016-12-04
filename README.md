@@ -10,13 +10,13 @@ Copy the files to the project file
 
 ###Import
 
-```
+```objective-c
 import "QuickStorage.h"
 ```
 
 ###Store
 
-```
+```objective-c
 NSString *obj1 = @"Fdis";
 NSDictionary *obj2 = [@"Key": [@"Data1", @"Data2"]];
 [QuickStorage storeObject:obj1 forKey:@"SomeKey"];
@@ -25,21 +25,21 @@ NSDictionary *obj2 = [@"Key": [@"Data1", @"Data2"]];
 
 ###Retrive
 
-```
+```objective-c
 NSString *str = [QuickStorage objectForKey:@"SomeKey"];
 NSArray *arr = [QuickStorage objectForKey:@"SomeOtherKey"];
 ```
 
 ###Check
 
-```
+```objective-c
 BOOL exists = [QuickStorage isObjectStoredWithKey:@"SomeKey"]; // ture, YES
 BOOL exists = [QuickStorage isObjectStoredWithKey:@"SXXX"]; // false, NO
 ```
 
 ###Delete
 
-```
+```objective-c
 [QuickStorage deleteObjectForKey:@"SomeKey"];
 ```
 
